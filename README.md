@@ -1,127 +1,115 @@
-# AI-Prompts-and-Scripts
-Real-time crypto risk auditing, liquidity tracking, and trade execution scripts using CCXT and the Kraken API, alongside AI automation workflows.
+# 🤖 AI Prompts & Scripts
 
-🚀 Crypto Risk Audit & Execution Bot (24_audit.py)
+A collection of AI prompts, scripts, automations, and random projects I've built while learning and experimenting with technology.
 
-A dynamic Python command-line utility built on top of CCXT to perform real-time crypto market risk audits, liquidity checks, wallet balance tracking, and dynamic position sizing with optional live order execution on Kraken.
+I'm not a professional developer or cybersecurity expert. Most of this started with me asking:
 
-📌 Features
+> "Can I automate this?"
+>
+> "Can I build this myself?"
+>
+> or...
+>
+> "What happens if I try this?"
 
-Live Market Analysis: Fetches real-time price feeds, 24h trading volume, and top-10 bid/ask order book depth.
+This repository is where I'm sharing the results.
 
-Smart Account Tracking: Displays active crypto balance alongside available USD cash reserves.
+## 👨‍💻 What You'll Find Here
 
-Dynamic Position Sizing: Automatically calculates purchase quantities based on a risk-adjusted percentage of available USD cash.
+This repo will continue growing as I learn. It includes things like:
 
-Microsecond Nonce Handling: Native handling for Kraken API microsecond nonce constraints (time.time() * 1000000) and automatic transient retry logic.
+- 🤖 AI prompts and workflows
+- 🐍 Python scripts
+- 🐧 Linux and Bash tools
+- ⚡ PowerShell automation
+- 🌐 Networking and homelab utilities
+- 🔐 Cybersecurity lab projects
+- 📊 Monitoring and dashboards
+- ₿ Crypto tools and experiments
+- 🛠️ Random scripts that solved a problem I had
 
-Dual Execution Modes:
+Some projects are simple. Others have turned into much bigger builds.
 
-Simulation (Default): Runs paper audits and generates limit, stop-loss, and take-profit parameters safely without placing real trades.
+The goal isn't to pretend I know everything — it's to document what I'm learning and share things that might be useful to someone else.
 
-Live Execution (--live): Submits actual limit buy orders to Kraken with attached stop-loss and take-profit parameters.
+---
 
-⚙️ Prerequisites & Setup
+## 🚀 Projects
 
-1. Requirements
-Python 3.8+
+### 📈 Crypto Risk Audit & Execution Bot
 
-Active Kraken API Key & Secret (with trading and query permissions enabled)
+A Python-based crypto market analysis and risk management tool built using **CCXT and the Kraken API**.
 
-2. Installation
-Clone the repository and install the required dependencies:
+The project started as an experiment with live market data and eventually grew to include:
 
-Bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+- Real-time market prices
+- 24-hour trading volume
+- Order book analysis
+- Kraken account balance tracking
+- Dynamic position sizing
+- Stop-loss and take-profit calculations
+- Paper/simulation mode
+- Optional live order execution
+- API nonce handling
 
-pip install ccxt python-dotenv
-3. Environment Configuration
-Create a .env file in the root directory of the project:
+The default mode does **not** execute trades, allowing strategies and calculations to be tested before enabling live execution.
 
-Bash
-touch .env
-Add your API credentials to the .env file using the template below:
+---
 
-Code snippet
-# Kraken API Credentials
-KRAKEN_API_KEY=ENTER_API_KEY_HERE
-KRAKEN_API_SECRET=ENTER_API_SECRET_HERE
+## 🧪 RobLab
 
-⚠️ Security Notice: Never commit your .env file or actual API keys to GitHub. Ensure .env is listed inside your .gitignore file.
+A lot of the projects here come from my personal homelab, **RobLab**.
 
-🛠️ Usage Guide
+I've been using it to get hands-on experience with:
 
-1. Simulation Mode (Default & Safe)
-Runs market analysis, pulls account balance, and calculates position sizing without placing real trades:
+- Linux
+- Windows Server
+- Active Directory
+- Docker
+- Virtual machines
+- VLANs and network segmentation
+- Firewalls and ACLs
+- Cybersecurity labs
+- Self-hosted services
+- Monitoring
+- Automation
 
-Bash
-# Default asset (NEAR) on Kraken
-./24_audit.py
+I learn best by actually building things, breaking them, troubleshooting them, and figuring out why they work.
 
-# Specify a custom ticker
-./24_audit.py BTC
+---
 
-# Specify custom ticker and exchange
-./24_audit.py ETH kraken
-2. Live Order Execution Mode
-To execute real limit buy orders on Kraken based on your USD risk sizing, append the --live flag:
+## 📚 What I'm Learning
 
-Bash
-# Execute live order for NEAR
-./24_audit.py NEAR kraken --live
+I'm currently working toward IT certifications while focusing heavily on:
 
-# Execute live order for BTC
-./24_audit.py BTC kraken --live
+**Networking → Linux → Python → Cybersecurity → Automation**
 
-📊 Sample Terminal Output
+This GitHub is basically the public record of that journey.
 
-Plaintext
-=================== 24-HOUR RISK AUDIT ===================
-Target Ticker : NEAR
-Exchange      : Kraken
-Active Pair   : NEAR/USD
-Mode          : [SIMULATION]
-==========================================================
+Expect experiments, improvements, rewrites, and probably a few things that started with:
 
-+---------------------+-----------------------------------+
-| Market Metric       | Value                             |
-+---------------------+-----------------------------------+
-| Live Price (USD)    | $2.5148                           |
-| 24h Volume          | 3,664,753.53                      |
-| Bid Depth (Top 10)  | 10,015.28                         |
-| Ask Depth (Top 10)  | 10,298.73                         |
-| Whale Dump Risk     | LOW                               |
-+---------------------+-----------------------------------+
+**"This should be easy..."**
 
-+---------------------+-----------------------------------+
-| Account & Sizing    | Value                             |
-+---------------------+-----------------------------------+
-| Available NEAR      | 76.5360                           |
-| Crypto Value ($)    | $192.47                           |
-| USD Cash Available  | $500.00                           |
-| Risk Sizing (20%)   | $100.00                           |
-| Target Buy Quantity | 39.7646                           |
-+---------------------+-----------------------------------+
+---
 
-+---------------------+-----------------------------------+
-| Execution Parameter | Value                             |
-+---------------------+-----------------------------------+
-| Action              | BUY                               |
-| Execution Mode      | SIMULATION                        |
-| Limit Order Price   | $2.5148                           |
-| Calculated Quantity | 39.7646                           |
-| Stop Loss (-15%)    | $2.1376                           |
-| Take Profit (+100%) | $5.0296                           |
-+---------------------+-----------------------------------+
+## ⚠️ Disclaimer
 
-🔒 Security Best Practices
+Projects in this repository are primarily educational and experimental.
 
-API Key Permissions: Only grant Query Funds and Create/Modify Orders permissions on Kraken. Do NOT enable withdrawal permissions.
+Anything involving cybersecurity should only be used in systems and environments you own or have explicit permission to test.
 
-Git Ignore: Ensure your .gitignore contains the following:
+Crypto-related scripts are educational tools and should not be considered financial advice. Live trading functionality can result in financial loss.
 
-Code snippet
-.env
-__pycache__/
-*.pyc
+---
+
+## 🔨 Still Building
+
+I'm constantly learning and adding new projects.
+
+Some code here may be polished.
+
+Some may be a work in progress.
+
+And some exists simply because I wanted to see if I could build it.
+
+That's kind of the point.
