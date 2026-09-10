@@ -1,4 +1,4 @@
-# 🤖 AI Prompts & Scripts
+# AI Prompts & Scripts
 
 A collection of AI prompts, scripts, automations, and random projects I've built while learning and experimenting with technology.
 
@@ -14,19 +14,19 @@ I'm not a professional developer or cybersecurity expert. Most of this started w
 
 This repository is where I'm sharing the results.
 
-## 👨‍💻 What You'll Find Here
+## What You'll Find Here
 
 This repo will continue growing as I learn. It includes things like:
 
-- 🤖 AI prompts and workflows
-- 🐍 Python scripts
-- 🐧 Linux and Bash tools
-- ⚡ PowerShell automation
-- 🌐 Networking and homelab utilities
-- 🔐 Cybersecurity lab projects
-- 📊 Monitoring and dashboards
-- ₿ Crypto tools and experiments
-- 🛠️ Random scripts that solved a problem I had
+- AI prompts and workflows
+- Python scripts
+- Linux and Bash tools
+- PowerShell automation
+- Networking and homelab utilities
+- Cybersecurity lab projects
+- Monitoring and dashboards
+- Crypto tools and experiments
+- Random scripts that solved a problem I had
 
 Some projects are simple. Others have turned into much bigger builds.
 
@@ -34,11 +34,11 @@ The goal isn't to pretend I know everything — it's to document what I'm learni
 
 ---
 
-## 🚀 Projects
+## Projects
 
-### 📈 Crypto Risk Audit & Execution Bot
+### Crypto Risk Audit & Execution Bot
 
-A Python-based crypto market analysis and risk management tool built using **CCXT and the Kraken API**.
+A Python-based crypto market analysis and risk management tool built using CCXT and the Kraken API.
 
 The project started as an experiment with live market data and eventually grew to include:
 
@@ -52,11 +52,11 @@ The project started as an experiment with live market data and eventually grew t
 - Optional live order execution
 - API nonce handling
 
-The default mode does **not** execute trades, allowing strategies and calculations to be tested before enabling live execution.
+The default mode does not execute trades, allowing strategies and calculations to be tested before enabling live execution.
 
 ---
 
-## 🧪 RobLab
+## RobLab
 
 A lot of the projects here come from my personal homelab, **RobLab**.
 
@@ -78,7 +78,7 @@ I learn best by actually building things, breaking them, troubleshooting them, a
 
 ---
 
-## 📚 What I'm Learning
+## What I'm Learning
 
 I'm currently working toward IT certifications while focusing heavily on:
 
@@ -92,17 +92,17 @@ Expect experiments, improvements, rewrites, and probably a few things that start
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 Projects in this repository are primarily educational and experimental.
 
-Anything involving cybersecurity should only be used in systems and environments you own or have explicit permission to test.
+Anything involving cybersecurity should only be used on systems and environments you own or have explicit permission to test.
 
 Crypto-related scripts are educational tools and should not be considered financial advice. Live trading functionality can result in financial loss.
 
 ---
 
-## 🔨 Still Building
+## Still Building
 
 I'm constantly learning and adding new projects.
 
