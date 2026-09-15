@@ -1,0 +1,110 @@
+# Hotel Valet Parking Financial Variance Analyzer
+
+A practical managerial accounting framework built specifically for **hotel valet parking operations**.
+
+This project is designed around valet environments that use **Opera** for hotel guest / room-based parking activity and **Flash Parking** for valet and parking operations data. The framework combines information from both systems with monthly financial reports to create clear, professional variance explanations for management review.
+
+The goal is not simply to identify whether an account finished above or below budget.
+
+The goal is to explain:
+
+> **What changed, why it changed, whether the variance makes sense based on actual operating activity, and what management should pay attention to next.**
+
+This project is specifically focused on **valet parking**, including hotel guest parking, transient valet activity, overnight vehicle counts, drive-in capture, occupancy, labor usage, and parking-related revenue and expenses.
+
+---
+
+## About Me
+
+I’m a Senior Hospitality Manager with hands-on experience managing large-scale hotel valet and parking operations.
+
+My background is primarily operational, but over time I became increasingly interested in the financial side of the business — budgeting, labor management, variance analysis, revenue performance, and understanding how daily operating decisions affect the P&L.
+
+This project grew out of that interest.
+
+I wanted a framework that could take real hotel valet operating data and produce explanations that were financially accurate, operationally realistic, and easy to present to leadership.
+
+I’m not an accountant, and this is not intended to replace formal accounting review. The goal is to bridge the gap between **operations and finance**.
+
+---
+
+## Systems This Framework Is Based On
+
+This project was built around a hotel valet environment using:
+
+- **Opera** – hotel guest / room-based parking activity
+- **Flash Parking** – valet and parking operations data
+- Monthly financial / P&L reports
+- Labor and payroll reporting
+- Occupancy and vehicle forecasting
+
+The exact setup may vary by property, but the underlying analysis can be adapted to other hotel valet operations with similar data sources.
+
+---
+
+## What This Project Analyzes
+
+The framework can be used with monthly hotel valet parking financial reports containing:
+
+### Revenue
+- Offsite Storage Revenue
+- Valet Revenue
+- Valet-Opera Revenue
+- Monthly Parking Revenue
+- Refunds
+- Comps & Discounts
+- Digital / Ecommerce Revenue
+- Gross Revenue
+- Contra Revenue
+- Net Revenue
+
+### Operating Expenses
+- Payroll
+- PTO
+- Bonus
+- Payroll Taxes
+- Health Insurance
+- Workers' Compensation
+- 401(k) Match
+- Payroll Processing
+- Operating Supplies
+- Vehicle Expense
+- Office Supplies
+- Compliance Costs
+- Technology
+- Telecom
+- Professional Services
+- Meals
+- Total Operating Expenses
+
+### Operational Metrics
+- Hotel Occupancy
+- Drive-In Rate
+- Overnight Vehicles
+- Revenue Capture
+- Labor Hours
+- Budgeted Labor Hours
+- Labor Cost
+- Cost Per Hour
+- Revenue Performance
+
+---
+
+## Core Analysis Logic
+
+The framework follows a managerial accounting approach:
+
+```text
+Planning Budget
+        ↓
+Actual Activity
+        ↓
+Expected Result at Actual Activity
+        ↓
+Actual Result
+        ↓
+Variance
+        ↓
+Operational Driver
+        ↓
+Management Interpretation
