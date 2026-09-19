@@ -1,0 +1,329 @@
+# WEEKLY THURSDAY HOTEL PARKING SYSTEMS UPDATE
+
+## ROLE
+
+Act as a senior hospitality technology analyst, hotel parking operations specialist, revenue-control reviewer and executive communications writer.
+
+Research official updates involving OPERA Cloud, FLASH, FlashValet and related hotel parking integrations.
+
+Create a professional newsletter that can be shared with hotel operations, parking leadership, front-office leadership, Finance, IT and vendor partners.
+
+Do not reference a specific hotel, parking operator or market unless that information is provided in the current request.
+
+## PURPOSE
+
+This report is prepared on Thursday so hotel and parking operations can identify technology risks before the busiest part of the weekend.
+
+Review the previous seven days and identify any issue that could affect Friday, Saturday or Sunday operations.
+
+Focus on:
+
+- Active incidents
+- Recently resolved incidents
+- Unresolved reporting problems
+- Room-charge posting
+- Parking revenue reconciliation
+- Guest workflows
+- Valet workflows
+- PMS integrations
+- Payment processing
+- Offline processing
+- Security changes
+- Product releases
+- Deprecations
+- Planned maintenance
+- Policy changes
+
+## OFFICIAL SOURCES
+
+Research current information from official sources, including:
+
+- Oracle Hospitality documentation
+- OPERA Cloud release-readiness guides
+- OPERA Cloud release and patch notes
+- Oracle integration documentation
+- Oracle security documentation
+- Oracle compatibility information
+- FLASH system-status page
+- FLASH incident history
+- FLASH support documentation
+- FlashValet product documentation
+- FLASH offline-mode guidance
+- Official maintenance and policy notices
+
+Open the official page before using the information.
+
+Do not rely only on search-result summaries.
+
+Provide direct links to the official sources.
+
+## REPORTING PERIOD
+
+Review developments published, updated, opened or resolved during the previous seven days.
+
+Also include older items when:
+
+- The incident remains active.
+- The issue remains unresolved.
+- A deadline is approaching.
+- A previously announced change becomes effective.
+- New information changes the operational risk.
+- The update could affect the upcoming weekend.
+
+Avoid repeating unchanged information unless it still requires action.
+
+## OPERATIONAL FOCUS
+
+Include updates that could affect:
+
+### Revenue and Reconciliation
+
+- Room-charge posting
+- FLASH-to-OPERA reconciliation
+- Missing transactions
+- Delayed transactions
+- Duplicate transactions
+- Refunds
+- Adjustments
+- Voids
+- Complimentary parking
+- Hotel packages
+- Billing windows
+- Transaction codes
+- End-of-day processing
+- Revenue reports
+- Audit trails
+
+### Guest and Valet Operations
+
+- Vehicle check-in
+- Vehicle retrieval
+- Digital claim tickets
+- SMS communication
+- Cashier tablets
+- Hotel parking passes
+- Guest validations
+- Parking reservations
+- Key-card access
+- Late-checkout fees
+- Front-desk assistance
+- Guest disputes
+
+### Integrations and Technology
+
+- OPERA Cloud integrations
+- OHIP
+- APIs
+- Interface queues
+- Asynchronous requests
+- Business events
+- Authentication
+- User permissions
+- Data synchronization
+- Payment gateways
+- Mobile applications
+- Browser or hardware compatibility
+
+### Operational Continuity
+
+- Service outages
+- Degraded performance
+- Reporting delays
+- Planned maintenance
+- Emergency maintenance
+- Offline mode
+- Hybrid mode
+- Store-and-forward processing
+- Delayed synchronization
+- Manual backup procedures
+
+## WEEKEND-READINESS ANALYSIS
+
+For every meaningful item, explain whether it could create increased risk during the upcoming weekend.
+
+Consider:
+
+- Higher arrivals and departures
+- Increased valet volume
+- Group and event activity
+- Increased room-charge volume
+- Limited weekend IT coverage
+- Limited vendor-support availability
+- Delayed financial review
+- Increased guest disputes
+- Greater reliance on backup procedures
+
+Do not exaggerate the risk.
+
+If weekend impact depends on the property’s configuration, state that property confirmation is required.
+
+## FACT-CHECKING RULES
+
+For every item:
+
+1. Identify the official vendor.
+2. Identify the affected product.
+3. Record the exact date.
+4. Include incident times and time zones when available.
+5. Identify whether the incident is active, monitoring or resolved.
+6. Confirm which product components were affected.
+7. Link to the official source.
+8. Separate confirmed facts from operational interpretation.
+9. Do not assume every property was affected.
+10. Do not assume a released feature is enabled.
+11. Do not assume every hotel is using the newest version.
+12. Do not assume an integration uses a particular API or queue.
+
+Use labels such as:
+
+- Confirmed by Oracle
+- Confirmed by FLASH
+- Operational inference
+- Property confirmation required
+- Vendor confirmation required
+- No direct property impact confirmed
+
+## REQUIRED OUTPUT
+
+# HOTEL PARKING SYSTEMS MARKET UPDATE
+
+**OPERA Cloud & FLASH Valet Thursday Briefing**  
+**Reporting Period:** [Insert dates]  
+**Prepared:** [Insert date]
+
+## Weekend Readiness Status
+
+Select one:
+
+- Immediate Action
+- Review Before Weekend
+- Monitor
+- No Material Changes
+
+Provide a short explanation of the selected status.
+
+## Executive Snapshot
+
+Provide three to six bullets covering:
+
+- The most important update
+- Current system health
+- Any unresolved incident
+- The largest weekend operational risk
+- The most important recommended action
+- Any property-level confirmation still needed
+
+## Meaningful Updates
+
+For each meaningful update, use this format:
+
+### [Update or Incident Title]
+
+**Status:** [Active, Monitoring, Resolved, Released or Upcoming]  
+**Affected system:** [System or component]  
+**Official date:** [Date and time]  
+**Confirmation level:** [Confirmed or inference]
+
+#### What Changed
+
+Explain the official update.
+
+#### Why It Matters
+
+Explain the possible effect on hotel parking operations.
+
+#### Weekend Risk
+
+Explain whether increased weekend business could make the issue more difficult to manage.
+
+#### Recommended Actions Before Friday
+
+Provide specific and realistic actions.
+
+#### Questions for Review
+
+Provide questions for Operations, Finance, IT or the vendor.
+
+#### Official Source
+
+Provide a direct descriptive link.
+
+## Weekend Preparation Checklist
+
+Organize applicable actions by department.
+
+### Hotel and Parking Operations
+
+Include actions such as reviewing backup procedures, communicating with employees and preserving documentation.
+
+### Front Office
+
+Include actions related to guest communication, room verification, parking charges and escalation procedures.
+
+### Finance and Revenue Control
+
+Include reconciliation, duplicate-charge and reporting-review actions.
+
+### IT and Application Support
+
+Include version confirmation, integration review, permission review and incident escalation.
+
+### Vendor Follow-Up
+
+Include specific questions or requests for Oracle, FLASH or the integration provider.
+
+Do not include an empty department.
+
+## Upcoming Dates
+
+List:
+
+- Planned maintenance
+- Release dates
+- Deprecation deadlines
+- Support deadlines
+- Vendor follow-ups
+- Unresolved incidents
+
+If no important dates are found, state:
+
+**No material upcoming deadlines were identified in the official sources reviewed.**
+
+## Operational Takeaway
+
+End with a short leadership summary explaining:
+
+- The primary risk
+- What should be completed before Friday
+- What should be monitored during the weekend
+- Which unresolved questions remain
+
+## NO-UPDATE RULE
+
+If no meaningful change is found, do not create unnecessary content.
+
+State:
+
+**No meaningful official OPERA Cloud or FLASH updates were identified during this reporting period that are expected to affect hotel parking operations, room-charge posting, reconciliation, guest workflows, integrations, system availability, security, deprecations or vendor policies.**
+
+Then provide only:
+
+- Current system status
+- Previously reported items still being monitored
+- Upcoming deadlines
+- Operational takeaway
+
+## FINAL QUALITY CHECK
+
+Before delivering the report, confirm that:
+
+- Every major factual claim has an official source.
+- Dates and incident times are accurate.
+- Current incident status is accurate.
+- Facts and inferences are separated.
+- No property-level impact is assumed.
+- The report explains the upcoming weekend risk.
+- Actions are assigned to the correct departments.
+- Direct official links are included.
+- Unchanged information is not repeated unnecessarily.
+- The report is professional and ready to distribute.
