@@ -1,0 +1,314 @@
+# Hotel Parking Systems Market Update
+
+This project uses AI to monitor official updates from OPERA Cloud, FLASH and FlashValet, then translates those updates into information that actually makes sense for hotel parking operations.
+
+I work in hospitality parking operations, and one thing I have noticed is that important technology updates are often spread across release notes, support pages, system-status websites and technical documentation.
+
+The information is available, but it is not always written for the managers who are responsible for running the actual operation.
+
+I wanted to build something that answers the questions we really care about:
+
+- What changed?
+- Is something currently down?
+- Could this affect guests?
+- Could this affect valet operations?
+- Could this affect room-charge posting or reconciliation?
+- Do we need to contact IT, Finance or the vendor?
+- Is there anything we should review before the weekend?
+
+I am not a developer or hospitality technology expert. I am a hospitality manager who enjoys technology, automation and finding better ways to solve real operational problems.
+
+## Two Versions Are Included
+
+This repository includes two versions of the prompt:
+
+1. **Daily Hotel Parking Systems Update**
+2. **Weekly Hotel Parking Systems Market Update**
+
+The two prompts serve different purposes.
+
+The daily version is designed for quick awareness of new incidents, outages, reporting problems and urgent operational changes.
+
+The weekly version is designed for a more complete leadership review before the weekend.
+
+## Why the Weekly Report Runs on Thursday
+
+I chose Thursday for the weekly report because weekends are often some of the busiest operating periods for hotels and parking teams.
+
+Friday and Saturday can bring:
+
+- Higher hotel occupancy
+- More arrivals and departures
+- Weddings and social events
+- Conventions and group business
+- Increased valet volume
+- More parking reservations
+- Higher transaction volume
+- Greater pressure on front-office and parking teams
+- Fewer opportunities to stop and research system problems
+
+If an OPERA Cloud or FLASH incident is already developing, identifying it on Thursday gives the operation time to review the situation before peak weekend activity begins.
+
+A Thursday report gives leadership an opportunity to:
+
+- Review active incidents
+- Confirm whether the property was affected
+- Check room-charge posting
+- Review outstanding reconciliation differences
+- Contact IT or vendor support
+- Prepare backup procedures
+- Communicate with front-office and valet teams
+- Assign follow-up responsibilities
+- Resolve problems before Friday and Saturday volume increases
+
+The goal is not to predict every weekend problem. The goal is to give operations one more chance to identify a technology issue before the busiest part of the week.
+
+## Daily Update
+
+The daily prompt is designed to be short and action-oriented.
+
+It checks for new developments involving:
+
+- Active outages
+- Degraded system performance
+- FlashValet availability
+- FLASH Admin Portal availability
+- Reporting delays
+- OPERA Cloud incidents
+- Transaction-processing problems
+- Parking-to-PMS integration problems
+- Delayed or duplicate room charges
+- Offline or hybrid processing
+- Payment-processing problems
+- Security notices
+- Urgent maintenance
+- Vendor policy changes
+
+If nothing meaningful changed, the daily report should say so clearly.
+
+The daily version should not create a long newsletter when there is no important update.
+
+## Weekly Thursday Update
+
+The weekly prompt creates a more complete market-ready newsletter.
+
+It reviews:
+
+- Incidents from the previous seven days
+- Unresolved outages
+- Recently resolved service problems
+- OPERA Cloud release notes
+- FLASH and FlashValet updates
+- Reporting and reconciliation risks
+- Integration changes
+- New permissions or security requirements
+- Upcoming maintenance
+- Deprecations and support deadlines
+- Review-ready questions for leadership, Finance, IT and vendors
+
+The weekly report is intended to help teams prepare for the weekend and close out unresolved items from the week.
+
+## What the Prompts Monitor
+
+The prompts focus on updates that could affect:
+
+### Hotel Parking Operations
+
+- Valet check-in and retrieval
+- Parking access
+- Digital tickets
+- SMS communication
+- Cashier tablets
+- Hotel parking passes
+- Monthly parking
+- Employee parking
+- Parking reservations
+- Guest validations
+- Key-card access
+- Late-checkout fees
+
+### Revenue and Reconciliation
+
+- Room-charge posting
+- FLASH-to-OPERA reconciliation
+- Delayed transactions
+- Missing transactions
+- Duplicate charges
+- Refunds
+- Adjustments
+- Voids
+- Complimentary parking
+- Hotel parking packages
+- Transaction-code mapping
+- End-of-day processing
+- Financial reporting
+
+### Technology and Integrations
+
+- OPERA Cloud
+- FLASH
+- FlashValet
+- FlashPARCS
+- FLASH Admin Portal
+- OHIP
+- PMS interfaces
+- APIs
+- Integration queues
+- Business events
+- Payment gateways
+- Offline processing
+- Store-and-forward transactions
+- User permissions
+- Authentication
+- Product compatibility
+
+## Official Sources
+
+The prompts prioritize official information from:
+
+- Oracle Hospitality documentation
+- OPERA Cloud release-readiness guides
+- OPERA Cloud release notes
+- Oracle integration documentation
+- Oracle security documentation
+- FLASH system-status reports
+- FLASH incident history
+- FLASH support documentation
+- FlashValet product information
+- FLASH offline-mode guidance
+- Official vendor maintenance and policy notices
+
+The prompts are instructed to open and review the official source instead of relying only on search-result summaries.
+
+## Confirmed Facts Versus Operational Possibilities
+
+One of the most important parts of this project is separating confirmed facts from operational possibilities.
+
+For example, a public FLASH incident may confirm that FlashValet was affected, but that does not automatically prove that every hotel experienced the problem.
+
+The prompts should clearly identify information as:
+
+- Confirmed by Oracle
+- Confirmed by FLASH
+- Operational inference
+- Property confirmation required
+- Vendor confirmation required
+- No direct property impact confirmed
+
+The report should never claim that a hotel was affected without evidence.
+
+## Priority Levels
+
+Updates are organized using four priority levels.
+
+### Immediate Action
+
+Used when there is an active outage, transaction risk, security concern or current guest impact.
+
+### Review Recommended
+
+Used when an incident has been resolved but reconciliation or operational follow-up is still needed.
+
+### Monitor
+
+Used when a change has been announced but is not active or confirmed at the property level.
+
+### No Material Changes
+
+Used when no official update is expected to affect hotel parking operations.
+
+## Departmental Responsibilities
+
+Recommended actions can be assigned to:
+
+- Hotel operations
+- Parking or valet operations
+- Front office
+- Finance and revenue control
+- IT and application support
+- Hotel leadership
+- Vendors and integration partners
+
+This helps turn the report into something operational instead of just another newsletter that gets read and forgotten.
+
+## How to Use the Daily Prompt
+
+1. Open the daily prompt.
+2. Add the date and hotel time zone if needed.
+3. Paste it into an AI tool with live web access.
+4. Review the official source links.
+5. Share the update only if there is a meaningful operational change.
+6. Escalate urgent incidents to the correct department.
+
+## How to Use the Weekly Prompt
+
+1. Run the weekly prompt on Thursday.
+2. Review the previous seven days.
+3. Confirm current system status.
+4. Review all active and recently resolved incidents.
+5. Check for upcoming weekend risks.
+6. Review the recommended actions and questions.
+7. Remove anything that does not apply to your operation.
+8. Share the final newsletter with the appropriate market or hotel leaders.
+
+## Limitations
+
+The quality of each report depends on the information that is publicly available.
+
+Some release notes, support notices, incident details and property-level logs may require authenticated vendor access.
+
+The prompts may not be able to confirm:
+
+- A property’s OPERA Cloud version
+- A property’s FLASH configuration
+- Whether a specific hotel was affected
+- Whether an integration uses a particular API
+- Whether all delayed transactions synchronized
+- Whether a vendor has provided private support guidance
+
+Every report should be reviewed before it is distributed or used to make an operational, technical or financial decision.
+
+## Automation Is the Next Step
+
+Right now, the prompts can be run manually.
+
+I am working on getting the process automated so the system can:
+
+- Check official sources automatically
+- Compare new information with the previous report
+- Avoid repeating unchanged updates
+- Generate daily alerts
+- Create the Thursday newsletter
+- Keep a history of reported incidents
+- Track unresolved follow-up items
+- Prepare the report for distribution
+
+The long-term goal is to make this a simple monitoring and communication system for hotel parking operations.
+
+## Mailing List Coming Soon?
+
+That is the idea.
+
+I would eventually like the Thursday report to be distributed through a mailing list so hotel and parking leaders can receive one clear update before the weekend.
+
+I am still working through how I want the automation, review process and distribution to work. I do not want reports being sent automatically without someone reviewing the findings and official sources first.
+
+For now, the newsletter is manually reviewed before distribution.
+
+Mailing list coming soon... hopefully.
+
+## About Me
+
+I am a senior hospitality manager with hands-on experience in hotel valet operations, parking revenue, staffing, guest service and financial reporting.
+
+I am not a professional developer. I enjoy learning about technology and using it to improve the way real operations are managed.
+
+This project combines my hospitality experience with my interest in AI, automation and problem-solving.
+
+## Disclaimer
+
+This is an independent operational project and is not affiliated with, sponsored by or endorsed by Oracle, OPERA Cloud, FLASH or FlashValet.
+
+All product names and trademarks belong to their respective owners.
+
+Information generated by these prompts should be reviewed against official vendor documentation before operational, technical or financial decisions are made.
