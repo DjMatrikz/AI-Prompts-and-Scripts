@@ -1,0 +1,172 @@
+# Claude Code Reusable Agent Prompts
+
+This repository contains a reusable three-agent workflow for Claude Code. I made it so I can start a project with separate agents responsible for building, verifying, and fixing the work instead of asking one agent to handle everything in the same context.
+
+The prompts are designed to work across different projects, languages, and operating systems. The project requirements change, but the agent roles and review process stay consistent.
+
+## Agent Team
+
+| Agent | Responsibility | Can edit project code? |
+| --- | --- | --- |
+| `project-builder` | Reads the requirements and implements the project | Yes |
+| `project-verifier` | Independently tests the completed work and documents findings | No |
+| `bug-fixer` | Reproduces and repairs confirmed verifier findings | Yes |
+
+This creates a simple workflow:
+
+```text
+Requirements
+    ↓
+Project Builder
+    ↓
+Project Verifier
+    ↓
+Bug Fixer, if needed
+    ↓
+Final Verification
+```
+
+## Why I Made This
+
+I wanted a repeatable way to use Claude Code agents without rebuilding the workflow for every project. Separating the roles gives the verifier a fresh context and keeps it from quietly changing the code it is supposed to review.
+
+The bug fixer also works from documented findings instead of making random changes or adding unrelated features.
+
+## Requirements
+
+- Claude Code installed and signed in
+- A project folder
+- Claude Code with custom subagent support
+- PowerShell, Bash, or another shell supported by the project
+
+Confirm Claude Code is available:
+
+```powershell
+claude --version
+```
+
+## Files
+
+```text
+.
+├── README.md
+└── Claude_Code_Reusable_Subagents.md
+```
+
+`Claude_Code_Reusable_Subagents.md` contains:
+
+- The complete `project-builder` creation prompt
+- The complete `project-verifier` creation prompt
+- The complete `bug-fixer` creation prompt
+- Agent validation instructions
+- A reusable orchestration prompt for starting new projects
+
+## Quick Start
+
+Open PowerShell in the project you want to work on:
+
+```powershell
+cd "C:\Path\To\Your\Project"
+claude
+```
+
+Open `Claude_Code_Reusable_Subagents.md` and paste each agent-creation prompt into Claude Code one at a time.
+
+The definitions are created under:
+
+```text
+.claude/agents/
+├── project-builder.md
+├── project-verifier.md
+└── bug-fixer.md
+```
+
+These are project-scoped agents. They are available in the current project without changing the agent setup for every other Claude Code project.
+
+If `.claude/agents/` did not exist when the current Claude Code session started, exit and restart Claude Code after creating the first definition:
+
+```text
+/exit
+```
+
+```powershell
+claude
+```
+
+## Validate the Agent Files
+
+Ask Claude Code to validate and list the agents:
+
+```text
+Validate every file in .claude/agents and list the available project-scoped subagents with their names, purposes, models, turn limits, and allowed tools. Do not run them.
+```
+
+The directory can also be validated from PowerShell:
+
+```powershell
+claude plugin validate .claude/agents
+```
+
+## Start a Project
+
+Copy the reusable orchestration prompt from `Claude_Code_Reusable_Subagents.md`. Replace these sections with the details of the project:
+
+- `PROJECT GOAL`
+- `PROJECT CONTEXT`
+- `REQUIREMENTS`
+- `ACCEPTANCE CRITERIA`
+- `OUT OF SCOPE`
+
+The main Claude Code session acts as the coordinator. It gives the implementation to `project-builder`, sends the finished work to `project-verifier`, and uses `bug-fixer` only when the verifier documents a confirmed problem.
+
+## Review Reports
+
+The verifier creates:
+
+```text
+verification_report.md
+```
+
+Each finding includes its severity, reproduction steps, expected behavior, actual behavior, evidence, and a recommended correction. The report ends with one of these verdicts:
+
+- `PASS`
+- `PASS WITH WARNINGS`
+- `FAIL`
+
+When repairs are needed, the bug fixer creates:
+
+```text
+bug_fix_report.md
+```
+
+The final review goes back to `project-verifier`, keeping verification separate from implementation and repair.
+
+## Customize the Agents
+
+The definitions can be adjusted per project. Common changes include:
+
+- Increasing or reducing `maxTurns`
+- Changing `model: inherit` to a supported model alias
+- Removing tools an agent does not need
+- Adding project-specific safety rules
+- Adding required test, lint, build, or formatting commands
+- Adding the project's definition of done
+
+Keep the verifier read-only if you want an independent review. The default verifier can write its report and temporary test data, but it does not have the `Edit` tool.
+
+## Safety Defaults
+
+The prompts instruct the agents to:
+
+- Avoid exposing credentials and private data
+- Preserve unrelated work
+- Use isolated or fabricated test data when appropriate
+- Avoid deployments and external actions unless explicitly requested
+- Require evidence before fixing a reported defect
+- Return final verification to an independent agent
+
+Review agent output before allowing actions involving production systems, real customer data, deployments, deletion, or external accounts.
+
+## Current Status
+
+This started as a test workflow while I was learning Claude Code subagents. I plan to keep improving the prompts as I use them across more projects and learn where the process can be tightened up.
